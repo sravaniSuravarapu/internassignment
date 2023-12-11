@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/abf79b9b80.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="log.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  <div class="not-logged-in">
+    <!--navbar section-->
+    <div class="navbar-section d-none d-md-block">
+      <div class="fluid-container">
+          <div class="row p-3 ml-5 mr-5">
+              <div class="col-md-4">
+                  <img src="image5.png" class="cursor-pointer" alt="image5 not found">
+              </div>
+              <div class="col-md-4 text-center">
+                  <div class="search">
+                      <i class="fa fa-search"></i>
+                      <input type="text" class="form-control" placeholder="Search for your favorite groups in ATG">
+                  </div>
+              </div>
+              <div class="col-md-4 text-right" data-toggle="modal" data-target="#exampleModal">
+                <p><img src="logimage1.png">&nbsp;&nbsp;Sathish Kumar</p>
+              </div>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5" style="width:1000px;">
+                    <div class="modal-content" >
+                        <div class="modal-header" style="background-color: rgb(222, 249, 236);">
+                            <p class="modal-title text-success thanking-customers-section-modal-title" id="exampleModalLabel" >
+                                Let's learn,share & inspire each other with our passion for computer engineering.Sign up now
+                            </p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body w-100 p-3">
+                          <div class="d-flex flex-row justify-content-between">
+                          <div class="text-center" style="font-size: 10px;">
+                          <h4 >Create Account</h4>
+                          <input type="text" placeholder="First Name"><input type="text" placeholder="Last Name">
+                          <input type="text" placeholder="Email" class="form-control">
+                          <input type="text" placeholder="Password" class="form-control">
+                          <input type="text" placeholder="Confirm Password" class="form-control"><br>
+                          <button class="btn btn-primary text-white">Create Account</button><br><br>
+                          <div><p style="border:1px solid rgb(166, 165, 165);padding: 4px;"><i class="fab fa-facebook" style="color: blue;"></i>&nbsp;&nbsp;Sign up with Facebook</p></div>
+                          <div><p style="border:1px solid rgb(166, 165, 165);padding:4px;"><i class="fab fa-google" style="color: red;"></i>&nbsp;&nbsp;Sign up with Google</p></div>
+                          </div>
+                          <div class="text-right" style="font-size: 15px;">
+                          <p style="font-size: 15px;">Already have an account?<span class="text-primary" data-toggle="modal" data-target="#loginModal">Sign In</span></p><br>
+                          <img src="modal.png" alt="image not found">
+                          <p>By signing up,you agree to our Terms & conditions,Privacy policy</p>
+                          </div>
+                          </div>
+                             </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog mt-5" style="width:1000px;">
+                  <div class="modal-content" >
+                      <div class="modal-header" style="background-color: rgb(222, 249, 236);">
+                          <p class="modal-title text-success thanking-customers-section-modal-title" id="exampleModalLabel" >
+                              Let's learn,share & inspire each other with our passion for computer engineering.Sign up now
+                          </p>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body w-100 p-4">
+                        <div class="d-flex flex-row justify-content-between">
+                        <div class="text-center" style="font-size: 15px;">
+                        <h4 >Sign In</h4>
+                         <input type="text" placeholder="Email" class="form-control">
+                        <input type="text" placeholder="Password" class="form-control"><br>
+                        <button class="btn btn-primary text-white">Sign In</button><br><br>
+                        <div ><p style="border:1px solid rgb(166, 165, 165);padding: 4px;"><i class="fab fa-facebook" style="color: blue;"></i>&nbsp;&nbsp;Sign up with Facebook</p></div>
+                        <div ><p style="border:1px solid rgb(166, 165, 165);padding: 4px;"><i class="fab fa-google" style="color: red;"></i>&nbsp;&nbsp;Sign up with Google</p></div>
+                        <p>Forget Password?</p>
+                        </div>
+                        <div class="text-right" style="font-size: 15px;">
+                        <p style="font-size: 15px;">Don't have an account yet?<span class="text-primary" data-toggle="modal" data-target="#loginModal">Create new for free!</span></p><br>
+                        <img src="modal.png" alt="image not found">
+
+                        </div>
+                        </div>
+                           </div>
+                      
+                  </div>
+              </div>
+          </div>
+
+        </div>
+          </div>
+      </div>
+    <!--items-list section-->
+    <div class="items-list p-2 d-none d-md-block">
+        <div class="container position-relative">
+          <div class="row">
+            <div class="col-6 d-flex align-items-center">
+              <ul class="list-inline mb-0">
+                <li class="list-inline-item cursor-pointer" style="color: black;font-weight: 600;">All Posts(32)</li>
+                <li class="list-inline-item cursor-pointer">Article</li>
+                <li class="list-inline-item cursor-pointer">Event</li>
+                <li class="list-inline-item cursor-pointer">Education</li>
+                <li class="list-inline-item cursor-pointer">Job</li>
+              </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <p class="cursor-pointer" style="color: white;background-color: rgb(202, 203, 204); display: inline-block; padding: 5px 10px; border-radius: 5px; color: black;">
+                Write a Post&nbsp;<i class="fa fa-caret-down" style="color: black;"></i>
+              </p>&nbsp;&nbsp;&nbsp;&nbsp;
+              <p class="cursor-pointer" style="background-color: #3498db; display: inline-block; padding: 5px 10px; border-radius: 5px; color: white;">
+                <i class="fa fa-users"></i> Leave Group
+              </p>
+            </div>
+          </div>
+          <!-- Horizontal line -->
+          <hr style="border-top: 1px solid #ddd; margin-top: 10px;">
+        </div>
+      </div>
+      <div class="container p-3 d-lg-none d-md-none mt-2">
+        <div class="row">
+            <div class="d-flex flex-row justify-content-between">
+                <div>
+                    <h5 style="margin-left: 20px;">All Posts(343)</h5>
+                </div>
+                <div >
+                    <p class="cursor-pointer" style="color: white; background-color: rgb(202, 203, 204); display: inline-block; padding: 5px 10px; border-radius: 5px; color: black;margin-left: 280px;">
+                        Filter All&nbsp;<i class="fa fa-caret-down" style="color: black;"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!--posts-section-->
+<div class="container">
+<div class="row">
+<div class="col-md-9 col-12">
+<div class="card-container shadow mb-3 rounded">
+<img src="image7.png" alt="image2 not found" class="w-100">
+<div class="text-cont p-3">
+<p><i class="fas fa-file-alt"></i>&nbsp;&nbsp;Article</p>
+<div class="d-flex justify-content-between">
+    <h4>What if famous brands had regular fonts? Meet<br>RegulaBrands!</h4>
+    <i class="fas fa-ellipsis-h"></i>
+  </div>
+  
+<p>I've worked in UX for the better part of a decade.From now on,I plan to rei...</p><br>
+<div class="d-flex justify-content-between">
+<div class="left d-flex flex-row justify-content-start">
+<img src="profile.png" alt="profile image not found">&nbsp;&nbsp; <p class="mt-2 font-bold">Sarthak Kamra</p>
+</div>
+<div class="right d-flex flex-row justify-content-end">
+<div class="d-flex felx-row justify-content-center"><img src="eye.png" class="mb-2">&nbsp;&nbsp;<P class="mt-2">1.4kviews</P></div>&nbsp;&nbsp;&nbsp;&nbsp;
+<div><img src="share.png" class="cursor-pointer"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card-container shadow mb-3 rounded">
+<img src="image2.png" alt="image2 not found" class="w-100">
+<div class="text-cont p-3">
+    <p><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp; Education</p>
+    <div class="d-flex justify-content-between">
+        <h4>Tax Benefits for Investment under National Pension <br>Scheme launched by Government</h4>
+        <i class="fas fa-ellipsis-h"></i>
+      </div>
+      
+<p>I've worked in UX for the better part of a decade.From now on,I plan to rei...</p><br>
+<div class="d-flex justify-content-between">
+<div class="left d-flex flex-row justify-content-start">
+<img src="profile2.png" alt="profile image not found">&nbsp;&nbsp; <p class="mt-2 font-bold">Sarah West</p>
+</div>
+<div class="right d-flex flex-row justify-content-end">
+<div class="d-flex felx-row justify-content-center"><img src="eye.png" class="mb-2">&nbsp;&nbsp;<P class="mt-2">1.4kviews</P></div>&nbsp;&nbsp;&nbsp;&nbsp;
+<div><img src="share.png" class="cursor-pointer"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card-container shadow mb-3 rounded">
+<img src="image3.png" alt="image2 not found" class="w-100">
+<div class="text-cont p-3">
+    <p><i class="fas fa-handshake"></i>&nbsp;&nbsp;Meetup</p>
+    <div class="d-flex justify-content-between" >
+        <h4>Finance & Investment Elite Social Mixer @Lujiazui</h4>
+        <i class="fas fa-ellipsis-h" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Edit</a>
+  <a class="dropdown-item" href="#">Report</a>
+  <a class="dropdown-item" href="#">Option 3</a>
+</div>
+      </div>
+      
+      
+<div class="d-flex flex-row justify-content-start">
+<div><p><i class="far fa-calendar-alt"></i>&nbsp;&nbsp;Fri,12 Oct,2018</p></div>&nbsp;&nbsp;&nbsp;
+<div><p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Ahmedabad</p></div>
+</div>
+<button class=" btn btn-outline w-100 mb-2" style="border:2px solid rgb(207, 205, 205);color:red;">Visit Website</button><br>
+<div class="d-flex justify-content-between">
+<div class="left d-flex flex-row justify-content-start">
+<img src="profile3.png" alt="profile image not found">&nbsp;&nbsp; <p class="mt-2 font-bold">Sarah West</p>
+</div>
+<div class="right d-flex flex-row justify-content-end">
+<div class="d-flex felx-row justify-content-center"><img src="eye.png" class="mb-2">&nbsp;&nbsp;<P class="mt-2">1.4kviews</P></div>&nbsp;&nbsp;&nbsp;&nbsp;
+<div><img src="share.png" class="cursor-pointer"></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card-container shadow mb-3 rounded">
+<div class="text-cont p-3">
+    <p><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Job</p>
+    <div class="d-flex justify-content-between" >
+        <h4>Software Developer</h4>
+        <i class="fas fa-ellipsis-h" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+  <a class="dropdown-item" href="#">Edit</a>
+  <a class="dropdown-item" href="#">Report</a>
+  <a class="dropdown-item" href="#">Option 3</a>
+</div>
+      </div>
+      
+      
+<div class="d-flex flex-row justify-content-start">
+<div><p><i class="fas fa-suitcase"></i>&nbsp;&nbsp;Innovaccer Analytics Private Ltd.</p></div>&nbsp;&nbsp;&nbsp;
+<div><p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Noida, India</p></div>
+</div>
+<button class=" btn btn-outline w-100 mb-2" style="border:2px solid rgb(207, 205, 205);color:rgb(6, 111, 48)">Apply on Timesjobs</button><br>
+<div class="d-flex justify-content-between">
+<div class="left d-flex flex-row justify-content-start">
+<img src="profile4.png" alt="profile image not found">&nbsp;&nbsp; <p class="mt-2 font-bold">Sarah West</p>
+</div>
+<div class="right d-flex flex-row justify-content-end">
+<div class="d-flex felx-row justify-content-center"><img src="eye.png" class="mb-2">&nbsp;&nbsp;<P class="mt-2">1.4kviews</P></div>&nbsp;&nbsp;&nbsp;&nbsp;
+<div><img src="share.png" class="cursor-pointer"></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="col-3 d-none d-md-block">
+<div class="d-flex flex-row justify-content-between">
+<div class="d-flex flex-row justify-content-start">
+    <div>
+        <i class="fas fa-map-marker-alt ml-2"></i>
+    </div>
+    <div class="editable-field">
+        <input type="text" class="form-control" value="Noida, India" readonly>
+    </div>
+</div>
+<div class="edit-icon" onclick="toggleEdit()">
+    <i class="fas fa-pen"></i>
+</div> 
+</div><br>
+
+<div class="d-flex flex-row justify-content-center">
+<i class="fas fa-exclamation-circle mt-2"></i>
+&nbsp;&nbsp;<p>Your location will help us serve better and extend a personalised experience.</p>
+</div>
+<div class="d-flex flex-row justify-content-between">
+<div>
+  <p><img src="logimage1.png">&nbsp;&nbsp;Leisure</p>
+  <p><img src="logimage1.png">&nbsp;&nbsp;Activism</p>
+  <p><img src="logimage1.png">&nbsp;&nbsp;MBA</p>
+  <p><img src="logimage1.png">&nbsp;&nbsp;Phylosopy</p>
+</div>
+<div><button class="btn bg-dark p-1 text-white" style="border-radius: 15px;width:70px;">Followed</button><br><br>
+  <button class="btn btn-outline-dark p-1 text-dark" style="border-radius: 15px;width:70px;">Follow</button><br><br>
+  <button class="btn btn-outline-dark p-1 text-dark" style="border-radius: 15px;width:70px;">Follow</button><br><br>
+  <button class="btn btn-outline-dark p-1 text-dark" style="border-radius: 15px;width:70px;">Follow</button><br><br>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="row">
+  <div >
+  <div id="editIcon" class="col-md-none col-sm-block" onclick="toggleEdit()">
+    <i class="fas fa-pen"></i>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
